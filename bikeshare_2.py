@@ -177,11 +177,11 @@ def user_stats(df):
     print('-'*40)
 
 
-def display_raw_data(df):
+def display_data(df):
     """Ask the user if he wants to display sample of data and print 5 rows at time"""
     view_data = input(
-        "Would you like to view 5 rows of individual trip data? Enter yes or no?")
-    if view_data.lower() == 'yes':
+        "Would you like to view 5 rows of individual trip data? Enter yes or no?").lower()
+    if view_data == 'yes':
         start_loc = 0
         while True:
             print(df.iloc[start_loc: start_loc+5])
