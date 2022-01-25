@@ -186,7 +186,7 @@ def display_data(df):
         while True:
             print(df.iloc[start_loc: start_loc+5])
             start_loc += 5
-            view_display = input("Do you wish to continue?: ").lower()
+            view_display = input("Do you wish to display another 5 Rows?: ").lower()
             if view_display != 'yes':
                 break
 
